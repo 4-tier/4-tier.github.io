@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>4TIER - Gestão de TI e Soluções Tecnológicas para Empresas</title>
-  <meta name="description" content="Soluções de TI para empresas: infraestrutura, sistemas, segurança, chatbots e treinamentos. Atendimento remoto e presencial no Brasil.">
+  <meta name="description" content="Soluções de TI: infraestrutura, sistemas, segurança e chatbots. Suporte remoto e presencial no Brasil.">
   <meta name="keywords" content="gestão de TI, infraestrutura de TI, segurança digital, consultoria de TI, suporte técnico, chatbots para WhatsApp, treinamentos corporativos, servidores, redes corporativas">
   <meta name="robots" content="index, follow">
   <meta name="author" content="4TIER">
@@ -15,7 +15,7 @@
   <meta property="og:url" content="https://4tier.com.br">
   <meta property="og:title" content="4TIER - Gestão de TI e Soluções Tecnológicas para Empresas">
   <meta property="og:description" content="Soluções completas em TI: infraestrutura, sistemas, segurança e treinamentos para empresas que buscam crescer com tecnologia.">
-  <meta property="og:image" content="https://4tier.com.br/assets/img/hero-bg1.jpg">
+  <meta property="og:image" content="https://4tier.com.br/assets/img/hero-bg1.webp">
   <meta property="og:site_name" content="4TIER">
 
   <!-- Twitter Card -->
@@ -42,13 +42,14 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.min.css" rel="stylesheet">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://4tier.com.br">
 
   <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
+<script type="application/ld+json">
+[
   {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -69,8 +70,21 @@
       "https://t.me/4tier",
       "https://wa.me/555195649904"
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Gestão de TI",
+    "provider": {
+      "@type": "Organization",
+      "name": "4TIER",
+      "url": "https://4tier.com.br"
+    },
+    "description": "Soluções em infraestrutura de TI, sistemas, segurança, chatbots para WhatsApp e treinamentos corporativos para empresas.",
+    "areaServed": "BR"
   }
-  </script>
+]
+</script>
 </head>
 
 <body class="index-page">
@@ -101,8 +115,7 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-      <img src="assets/img/hero-bg1.jpg" alt="Imagem de fundo representando tecnologia empresarial" data-aos="fade-in">
-      <div class="container d-flex flex-column align-items-center text-center">
+        <img src="assets/img/hero-bg1.webp" alt="Imagem de fundo representando tecnologia empresarial" loading="lazy" data-aos="fade-in">      <div class="container d-flex flex-column align-items-center text-center">
         <h1 data-aos="fade-up" data-aos-delay="100">Tecnologia que impulsiona o seu negócio</h1>
         <p data-aos="fade-up" data-aos-delay="200">
           Soluções em <strong>infraestrutura, sistemas e segurança</strong> para empresas que querem crescer com tecnologia sem complicação.
@@ -216,8 +229,7 @@
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
-      <img src="assets/img/cta-bg.webp" alt="Imagem de fundo para chamada à ação" data-aos="fade-in">
-      <div class="container">
+        <img src="assets/img/cta-bg.webp" alt="Imagem de fundo para chamada à ação" loading="lazy" data-aos="fade-in">      <div class="container">
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-9 text-center text-xl-start">
             <h3>Pronto para levar sua TI para o próximo nível?</h3>
@@ -527,7 +539,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.min.js"></script>
 
 </body>
 
