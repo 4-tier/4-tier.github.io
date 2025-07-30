@@ -1353,6 +1353,30 @@ section,
   border-radius: 50px;
 }
 
+/* Estilo para o Plano Enterprise */
+.pricing .pricing-item.enterprise {
+  border: 2px solid #ffd700;
+  background: #fff8e1;
+}
+
+/* Ajuste para consistência na seção Outras Soluções */
+#other-solutions .pricing-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 90px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Opcional: Ajustar espaçamento para 2 cartões */
+#other-solutions .row.justify-content-center {
+  max-width: 66.66%; /* Limita a largura total para simular 3 colunas, mas com 2 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
