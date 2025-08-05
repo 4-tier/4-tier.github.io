@@ -711,6 +711,33 @@
       </div>
     </section>
 
+<script>
+  window.chatwootSettings = {"position":"left","type":"standard","launcherTitle":"Fale conosco no chat"};
+  (function(d,t) {
+    var BASE_URL="http://localhost:3000";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'Zqpm4fNfFYK3UR6XVCKWz71w',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
+
+
+
+<style>
+  /* Ensure Chatwoot widget appears above all other elements */
+  .woot-widget-bubble.woot-elements--left,
+  .woot-widget-bubble.woot-elements--right,
+  .woot-widget-holder {
+    z-index: 9999999 !important;
+  }
+</style>
     <section id="contact" class="contact read-more section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Contato</h2>
@@ -863,5 +890,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
 
   <script src="assets/js/main.min.js" defer></script>
+  
 </body>
 </html>
