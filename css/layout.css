@@ -1,0 +1,213 @@
+/* ============================================================
+   4TIER × Eduardo Pires — Nav + Hero
+   ============================================================ */
+
+/* ── NAV ── */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 5%;
+  border-bottom: 1px solid var(--border);
+  background: rgba(13,15,20,0.92);
+  backdrop-filter: blur(16px);
+  position: sticky; top:0; z-index:100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-display);
+  color: var(--white);
+  font-weight: 800;
+  font-size: 1rem;
+  min-width: 0;
+}
+
+.logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.logo-name { color: var(--accent2); font-size: 1.05rem; }
+.logo-sep  { color: var(--muted); font-weight: 400; }
+.logo-city { color: var(--muted); font-size: 0.82rem; font-weight: 400; white-space: nowrap; }
+
+.nav-wa {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--wa);
+  color: white;
+  padding: 0.5rem 1.1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.nav-wa:hover { background: var(--wa2); }
+
+/* ── HERO ── */
+.hero-section { width: 100%; }
+
+.hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 4.5rem 5% 3.5rem;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+/* eyebrow badge */
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(37,211,102,0.1);
+  border: 1px solid rgba(37,211,102,0.25);
+  color: #4ade80;
+  padding: 0.3rem 0.85rem;
+  border-radius: 100px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.02em;
+}
+
+.live-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #4ade80;
+  flex-shrink: 0;
+  animation: blink 2s ease-in-out infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.25} }
+
+/* h1 */
+.hero-text h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.2rem;
+}
+.hero-text h1 em { font-style:normal; color: var(--accent2); }
+
+.hero-sub {
+  color: var(--muted2);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  max-width: 460px;
+  margin-bottom: 1.75rem;
+  line-height: 1.7;
+}
+.hero-sub b { color: var(--white); font-weight: 600; }
+
+/* CTA principal */
+.wa-cta-big {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: var(--wa);
+  color: white;
+  padding: 0.9rem 1.6rem;
+  border-radius: var(--radius-btn);
+  font-weight: 700;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 4px 24px rgba(37,211,102,0.25);
+  margin-bottom: 1rem;
+}
+.wa-cta-big:hover { background: var(--wa2); transform: translateY(-2px); }
+
+.wa-note { font-size: 0.78rem; color: var(--muted); margin-bottom: 1.75rem; }
+.wa-note b { color: var(--muted2); }
+
+/* proof numbers */
+.proof-row { display:flex; gap:2rem; flex-wrap:wrap; }
+.proof-item .num {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 800;
+}
+.proof-item .lbl { font-size: 0.75rem; color: var(--muted); margin-top:0.1rem; }
+
+/* ── CARDS DO HERO ── */
+.profile-stack { display:flex; flex-direction:column; gap:1rem; }
+
+.profile-card, .monitor-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 1.4rem;
+}
+
+.profile-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* FOTO REAL do Eduardo */
+.avatar-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--accent);
+  flex-shrink: 0;
+}
+
+.profile-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+.profile-role { font-size: 0.78rem; color: var(--accent2); }
+.profile-bio  { font-size: 0.82rem; color: var(--muted); line-height:1.6; }
+
+/* chips */
+.chips { display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:0.75rem; }
+.chip {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.72rem;
+  color: var(--muted2);
+}
+
+/* monitor card */
+.monitor-card { padding: 1.2rem; }
+.monitor-header {
+  display:flex; align-items:center;
+  justify-content:space-between;
+  margin-bottom:0.9rem;
+}
+.monitor-title  { font-size:0.8rem; font-weight:600; color:var(--muted2); }
+.monitor-status {
+  font-size:0.7rem; font-weight:600; color:#4ade80;
+  background:rgba(74,222,128,0.1);
+  padding:0.2rem 0.55rem; border-radius:100px;
+}
+
+.mrow {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:0.4rem 0;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.mrow:last-child { border:none; }
+.mname { font-size:0.79rem; color:var(--muted); }
+.mval  { font-size:0.79rem; font-weight:600; }
+.ok    { color:#4ade80; }
+.blue  { color:#60a5fa; }

@@ -1,0 +1,58 @@
+/* ============================================================
+   4TIER × Eduardo Pires — Responsividade
+   ============================================================ */
+
+/* ── TABLET (≤ 900px) ── */
+@media (max-width: 900px) {
+  .serv-grid   { grid-template-columns: repeat(2,1fr); }
+  .plans-grid  { grid-template-columns: 1fr; max-width:420px; margin-left:auto; margin-right:auto; }
+}
+
+/* ── MOBILE GRANDE (≤ 720px) ── */
+@media (max-width: 720px) {
+
+  /* Hero: coluna única */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 5% 2.5rem;
+  }
+
+  .hero-text h1 { font-size: clamp(1.7rem, 7vw, 2.4rem); }
+  .hero-sub     { max-width: 100%; }
+  .wa-cta-big   { width: 100%; justify-content: center; }
+
+  /* Dores: 1 coluna */
+  .dores-grid { grid-template-columns: 1fr; }
+
+  /* Serviços: 1 coluna */
+  .serv-grid  { grid-template-columns: 1fr; }
+
+  /* Logo simplificado */
+  .logo-city { display:none; }
+  .logo-sep  { display:none; }
+
+  /* CTA bloco */
+  .cta-bloco { margin:2rem 4% 3rem; padding:2.5rem 1.25rem; }
+
+  /* Footer empilhado */
+  footer { justify-content:center; text-align:center; }
+  .foot-links { justify-content:center; }
+}
+
+/* ── MOBILE PEQUENO (≤ 420px) ── */
+@media (max-width: 420px) {
+  .hero-text h1 { font-size: 1.65rem; }
+  .proof-row    { gap: 1.2rem; }
+  .proof-item .num { font-size: 1.3rem; }
+
+  .nav-wa { padding: 0.45rem 0.9rem; font-size: 0.82rem; }
+  .logo-name { font-size: 0.95rem; }
+
+  .btn-wa-lg, .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section-inner { padding: 3rem 5%; }
+}
